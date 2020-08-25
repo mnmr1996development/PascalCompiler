@@ -1,0 +1,81 @@
+program helloProgram;
+label lol;
+var i,x,y,l,sum,redo,cool,d: integer;
+var compilerGood: boolean;
+var a: array[0..8] of integer;
+var k: string;
+
+
+begin
+    x := 3;
+    y := 4;
+
+   writeln(x);
+   writeln(y);
+
+   y := x;
+
+  writeln(x);
+  writeln(y);
+
+   for i:= 0 to 10 do
+       begin
+            if i > 5 then
+           writeln(i);
+           else
+           l := x - i
+           writeln(l);
+       end;
+
+
+       case (l) of
+           3 :
+            x := x-1;
+           2 :
+            x := x+2;
+           1 :
+            x := x+3;
+           0 :
+            x := x+4;
+       end;
+
+       writeln(x);
+
+    a[0] := 30;
+    a[1] := 3;
+    a[2] := 89;
+    a[3] := 9;
+    sum := 0;
+    for i:=0 to 3 do
+    begin
+    sum := sum + a[i]
+    end;
+    cool := 10;
+    writeln(cool);
+    cool := cool-1;
+    writeln(cool);
+    cool := cool div 3;
+    writeln(cool);
+    goto lol;
+    writeln(redo);
+
+
+
+    lol:
+    compilerGood := true;
+    writeln(compilerGood);
+    compilerGood := false;
+    writeln(compilerGood);
+    x := 4;
+    y := 5;
+    repeat
+        d := x%y;
+        x := x-1;
+        until x < 2;
+        writeln(x)
+    writeln(a[0],' ', a[1], ' ', a[2],' ',a[3])
+    writeln(sum);
+    writeln(d);
+
+
+end.
